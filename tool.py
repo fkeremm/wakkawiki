@@ -5,17 +5,8 @@ os.system("apt install git")
 os.system("apt install python python2 -y")
 os.system("pkg install termux-api")
 os.system("clear")
-print("""
-\033[96m
- ██████╗ █████╗ ███████╗██████╗
-██╔════╝██╔══██╗██╔════╝██╔══██╗
-╚█████╗ ███████║█████╗  ██████╔╝
- ╚═══██╗██╔══██║██╔══╝  ██╔═══╝
-██████╔╝██║  ██║███████╗██║
-╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝
-""")
-
-os.system("termux-tts-speak -l tr Merhaba ben saepin tooluyum senin için wakka wiki açıklı siteler bulacağım")
+os.system("figlet WakkaWiki")
+os.system("termux-tts-speak -l tr Merhaba ben furkanın tooluyum senin için wakka wiki açıklı siteler bulacağım")
 os.system("termux-tts-speak -l tr siteler bulununca sana bildirim yollayacağım")
 os.chdir("/data/data/com.termux/files/home/sqlmap/")
 os.system("python2 sqlmap.py -g inurl:?PagePrincipale --batch")
